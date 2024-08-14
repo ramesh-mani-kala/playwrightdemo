@@ -1,0 +1,145 @@
+<testsuites id="" name="" tests="27" failures="3" skipped="0" errors="0" time="44.874064999999995">
+<testsuite name="tests/example.spec.ts" timestamp="2024-08-09T06:06:17.711Z" hostname="" tests="3" failures="0" skipped="0" time="3.7" errors="0">
+<testcase name="has title" classname="tests/example.spec.ts" time="0.514">
+</testcase>
+<testcase name="get started link" classname="tests/example.spec.ts" time="1.038">
+</testcase>
+<testcase name="basic test for google" classname="tests/example.spec.ts" time="2.148">
+</testcase>
+</testsuite>
+<testsuite name="tests-examples/demo-todo-app.spec.ts" timestamp="2024-08-09T06:06:17.711Z" hostname="" tests="24" failures="3" skipped="0" time="42.695" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples/demo-todo-app.spec.ts" time="0.398">
+<failure message="demo-todo-app.spec.ts:14:7 should allow me to add todo items" type="FAILURE">
+<![CDATA[  tests-examples/demo-todo-app.spec.ts:14:7 › New Todo › should allow me to add todo items ─────────
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://demo.playwright.dev/todomvc
+    Call log:
+      - navigating to "https://demo.playwright.dev/todomvc", waiting until "load"
+
+
+      2 |
+      3 | test.beforeEach(async ({ page }) => {
+    > 4 |   await page.goto('https://demo.playwright.dev/todomvc');
+        |              ^
+      5 | });
+      6 |
+      7 | const TODO_ITEMS = [
+
+        at /home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:4:14
+]]>
+</failure>
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples/demo-todo-app.spec.ts" time="0.636">
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples/demo-todo-app.spec.ts" time="0.626">
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples/demo-todo-app.spec.ts" time="1.125">
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples/demo-todo-app.spec.ts" time="0.639">
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples/demo-todo-app.spec.ts" time="0.604">
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples/demo-todo-app.spec.ts" time="0.282">
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples/demo-todo-app.spec.ts" time="0.666">
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="tests-examples/demo-todo-app.spec.ts" time="0.682">
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples/demo-todo-app.spec.ts" time="0.614">
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="tests-examples/demo-todo-app.spec.ts" time="0.267">
+</testcase>
+<testcase name="Editing › should trim entered text" classname="tests-examples/demo-todo-app.spec.ts" time="0.617">
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples/demo-todo-app.spec.ts" time="0.287">
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples/demo-todo-app.spec.ts" time="0.66">
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples/demo-todo-app.spec.ts" time="0.212">
+<failure message="demo-todo-app.spec.ts:260:7 should display the current number of todo items" type="FAILURE">
+<![CDATA[  tests-examples/demo-todo-app.spec.ts:260:7 › Counter › should display the current number of todo items 
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://demo.playwright.dev/todomvc
+    Call log:
+      - navigating to "https://demo.playwright.dev/todomvc", waiting until "load"
+
+
+      2 |
+      3 | test.beforeEach(async ({ page }) => {
+    > 4 |   await page.goto('https://demo.playwright.dev/todomvc');
+        |              ^
+      5 | });
+      6 |
+      7 | const TODO_ITEMS = [
+
+        at /home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:4:14
+]]>
+</failure>
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples/demo-todo-app.spec.ts" time="0.435">
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples/demo-todo-app.spec.ts" time="30.006">
+<failure message="demo-todo-app.spec.ts:290:7 should remove completed items when clicked" type="FAILURE">
+<![CDATA[  tests-examples/demo-todo-app.spec.ts:290:7 › Clear completed button › should remove completed items when clicked 
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://demo.playwright.dev/todomvc
+    Call log:
+      - navigating to "https://demo.playwright.dev/todomvc", waiting until "load"
+
+
+      2 |
+      3 | test.beforeEach(async ({ page }) => {
+    > 4 |   await page.goto('https://demo.playwright.dev/todomvc');
+        |              ^
+      5 | });
+      6 |
+      7 | const TODO_ITEMS = [
+
+        at /home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:4:14
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      279 |
+      280 | test.describe('Clear completed button', () => {
+    > 281 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      282 |     await createDefaultTodos(page);
+      283 |   });
+      284 |
+
+        at /home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:281:8
+
+    Error: locator.fill: Test ended.
+    Call log:
+      - waiting for getByPlaceholder('What needs to be done?')
+
+
+      414 |
+      415 |   for (const item of TODO_ITEMS) {
+    > 416 |     await newTodo.fill(item);
+          |                   ^
+      417 |     await newTodo.press('Enter');
+      418 |   }
+      419 | }
+
+        at createDefaultTodos (/home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:416:19)
+        at /home/purva/Documents/playwrightdemofinal/tests-examples/demo-todo-app.spec.ts:282:11
+]]>
+</failure>
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples/demo-todo-app.spec.ts" time="0.627">
+</testcase>
+<testcase name="Persistence › should persist its data" classname="tests-examples/demo-todo-app.spec.ts" time="0.343">
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="tests-examples/demo-todo-app.spec.ts" time="0.924">
+</testcase>
+<testcase name="Routing › should respect the back button" classname="tests-examples/demo-todo-app.spec.ts" time="0.757">
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples/demo-todo-app.spec.ts" time="0.314">
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="tests-examples/demo-todo-app.spec.ts" time="0.681">
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples/demo-todo-app.spec.ts" time="0.293">
+</testcase>
+</testsuite>
+</testsuites>
